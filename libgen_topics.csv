@@ -1,0 +1,320 @@
+ID,Topics,Link
+1,Business,https://libgen.rs/search.php?req=topicid1&open=0&column=topic
+2,Accounting,https://libgen.rs/search.php?req=topicid2&open=0&column=topic
+3,Logistics,https://libgen.rs/search.php?req=topicid3&open=0&column=topic
+4,Marketing,https://libgen.rs/search.php?req=topicid4&open=0&column=topic
+5,Marketing: Advertising,https://libgen.rs/search.php?req=topicid5&open=0&column=topic
+6,Management,https://libgen.rs/search.php?req=topicid6&open=0&column=topic
+7,Management: Project Management,https://libgen.rs/search.php?req=topicid7&open=0&column=topic
+8,MLM,https://libgen.rs/search.php?req=topicid8&open=0&column=topic
+9,Responsibility and Business Ethics,https://libgen.rs/search.php?req=topicid9&open=0&column=topic
+10,Trading,https://libgen.rs/search.php?req=topicid10&open=0&column=topic
+11,E-Commerce,https://libgen.rs/search.php?req=topicid11&open=0&column=topic
+12,Biology,https://libgen.rs/search.php?req=topicid12&open=0&column=topic
+13,Estestvoznananie,https://libgen.rs/search.php?req=topicid13&open=0&column=topic
+14,Anthropology,https://libgen.rs/search.php?req=topicid14&open=0&column=topic
+15,Anthropology: Evolution,https://libgen.rs/search.php?req=topicid15&open=0&column=topic
+16,Biostatistics,https://libgen.rs/search.php?req=topicid16&open=0&column=topic
+17,Biotechnology,https://libgen.rs/search.php?req=topicid17&open=0&column=topic
+18,Biophysics,https://libgen.rs/search.php?req=topicid18&open=0&column=topic
+19,Biochemistry,https://libgen.rs/search.php?req=topicid19&open=0&column=topic
+20,Biochemistry: enologist,https://libgen.rs/search.php?req=topicid20&open=0&column=topic
+21,Virology,https://libgen.rs/search.php?req=topicid21&open=0&column=topic
+22,Genetics,https://libgen.rs/search.php?req=topicid22&open=0&column=topic
+23,Zoology,https://libgen.rs/search.php?req=topicid23&open=0&column=topic
+24,Zoology:Paleontology,https://libgen.rs/search.php?req=topicid24&open=0&column=topic
+25,Zoology: Fish,https://libgen.rs/search.php?req=topicid25&open=0&column=topic
+26,Microbiology,https://libgen.rs/search.php?req=topicid26&open=0&column=topic
+27,Molecular,https://libgen.rs/search.php?req=topicid27&open=0&column=topic
+28,Molecular: Bioinformatics,https://libgen.rs/search.php?req=topicid28&open=0&column=topic
+30,Plants: Agriculture and Forestry,https://libgen.rs/search.php?req=topicid30&open=0&column=topic
+31,Ecology,https://libgen.rs/search.php?req=topicid31&open=0&column=topic
+32,Geography,https://libgen.rs/search.php?req=topicid32&open=0&column=topic
+33,Geodesy. Cartography,https://libgen.rs/search.php?req=topicid33&open=0&column=topic
+34,Local History,https://libgen.rs/search.php?req=topicid34&open=0&column=topic
+35,Local history: Tourism,https://libgen.rs/search.php?req=topicid35&open=0&column=topic
+36,"Meteorology, Climatology",https://libgen.rs/search.php?req=topicid36&open=0&column=topic
+37,Russia,https://libgen.rs/search.php?req=topicid37&open=0&column=topic
+38,Geology,https://libgen.rs/search.php?req=topicid38&open=0&column=topic
+39,Gidrogeology,https://libgen.rs/search.php?req=topicid39&open=0&column=topic
+40,Mining,https://libgen.rs/search.php?req=topicid40&open=0&column=topic
+41,"Housekeeping, leisure",https://libgen.rs/search.php?req=topicid41&open=0&column=topic
+42,Aquaria,https://libgen.rs/search.php?req=topicid42&open=0&column=topic
+43,Astrology,https://libgen.rs/search.php?req=topicid43&open=0&column=topic
+44,Pet,https://libgen.rs/search.php?req=topicid44&open=0&column=topic
+45,Games: Board Games,https://libgen.rs/search.php?req=topicid45&open=0&column=topic
+46,Games: Chess,https://libgen.rs/search.php?req=topicid46&open=0&column=topic
+47,Collecting,https://libgen.rs/search.php?req=topicid47&open=0&column=topic
+48,"Beauty, image",https://libgen.rs/search.php?req=topicid48&open=0&column=topic
+49,Cooking,https://libgen.rs/search.php?req=topicid49&open=0&column=topic
+50,"Fashion, Jewelry",https://libgen.rs/search.php?req=topicid50&open=0&column=topic
+51,Hunting and Game Management,https://libgen.rs/search.php?req=topicid51&open=0&column=topic
+52,Benefits Homebrew,https://libgen.rs/search.php?req=topicid52&open=0&column=topic
+53,Professions and Trades,https://libgen.rs/search.php?req=topicid53&open=0&column=topic
+54,Handicraft,https://libgen.rs/search.php?req=topicid54&open=0&column=topic
+55,Handicraft: Cutting and Sewing,https://libgen.rs/search.php?req=topicid55&open=0&column=topic
+56,"Garden, garden",https://libgen.rs/search.php?req=topicid56&open=0&column=topic
+57,Art,https://libgen.rs/search.php?req=topicid57&open=0&column=topic
+58,Design: Architecture,https://libgen.rs/search.php?req=topicid58&open=0&column=topic
+59,Graphic Arts,https://libgen.rs/search.php?req=topicid59&open=0&column=topic
+60,Cinema,https://libgen.rs/search.php?req=topicid60&open=0&column=topic
+61,Music,https://libgen.rs/search.php?req=topicid61&open=0&column=topic
+62,Music: Guitar,https://libgen.rs/search.php?req=topicid62&open=0&column=topic
+63,Photo,https://libgen.rs/search.php?req=topicid63&open=0&column=topic
+64,History,https://libgen.rs/search.php?req=topicid64&open=0&column=topic
+65,American Studies,https://libgen.rs/search.php?req=topicid65&open=0&column=topic
+66,Archaeology,https://libgen.rs/search.php?req=topicid66&open=0&column=topic
+67,Military History,https://libgen.rs/search.php?req=topicid67&open=0&column=topic
+69,Computers,https://libgen.rs/search.php?req=topicid69&open=0&column=topic
+70,Web-design,https://libgen.rs/search.php?req=topicid70&open=0&column=topic
+71,Algorithms and Data Structures,https://libgen.rs/search.php?req=topicid71&open=0&column=topic
+72,Algorithms and Data Structures: Cryptography,https://libgen.rs/search.php?req=topicid72&open=0&column=topic
+73,Algorithms and Data Structures: Image Processing,https://libgen.rs/search.php?req=topicid73&open=0&column=topic
+74,Algorithms and Data Structures: Pattern Recognition,https://libgen.rs/search.php?req=topicid74&open=0&column=topic
+75,Algorithms and Data Structures: Digital watermarks,https://libgen.rs/search.php?req=topicid75&open=0&column=topic
+76,Databases,https://libgen.rs/search.php?req=topicid76&open=0&column=topic
+77,Security,https://libgen.rs/search.php?req=topicid77&open=0&column=topic
+78,Information Systems,https://libgen.rs/search.php?req=topicid78&open=0&column=topic
+79,Information Systems: EC businesses,https://libgen.rs/search.php?req=topicid79&open=0&column=topic
+80,Cybernetics,https://libgen.rs/search.php?req=topicid80&open=0&column=topic
+81,Cybernetics: ArtificialIntelligence,https://libgen.rs/search.php?req=topicid81&open=0&column=topic
+82,Cryptography,https://libgen.rs/search.php?req=topicid82&open=0&column=topic
+83,"Lectures, monographs",https://libgen.rs/search.php?req=topicid83&open=0&column=topic
+84,Media,https://libgen.rs/search.php?req=topicid84&open=0&column=topic
+85,Operating Systems,https://libgen.rs/search.php?req=topicid85&open=0&column=topic
+86,Organization and Data Processing,https://libgen.rs/search.php?req=topicid86&open=0&column=topic
+87,Programming,https://libgen.rs/search.php?req=topicid87&open=0&column=topic
+88,Programming: Libraries API,https://libgen.rs/search.php?req=topicid88&open=0&column=topic
+89,Programming: Games,https://libgen.rs/search.php?req=topicid89&open=0&column=topic
+90,Programming: Compilers,https://libgen.rs/search.php?req=topicid90&open=0&column=topic
+91,Programming: Modeling languages,https://libgen.rs/search.php?req=topicid91&open=0&column=topic
+92,Programming: Programming Languages,https://libgen.rs/search.php?req=topicid92&open=0&column=topic
+93,"Programs: TeX, LaTeX",https://libgen.rs/search.php?req=topicid93&open=0&column=topic
+94,Software: Office software,https://libgen.rs/search.php?req=topicid94&open=0&column=topic
+95,Software: Adobe Products,https://libgen.rs/search.php?req=topicid95&open=0&column=topic
+96,Software: Macromedia Products,https://libgen.rs/search.php?req=topicid96&open=0&column=topic
+97,Software: CAD,https://libgen.rs/search.php?req=topicid97&open=0&column=topic
+98,Software: Systems: scientific computing,https://libgen.rs/search.php?req=topicid98&open=0&column=topic
+99,Networking,https://libgen.rs/search.php?req=topicid99&open=0&column=topic
+100,Networking: Internet,https://libgen.rs/search.php?req=topicid100&open=0&column=topic
+101,System Administration,https://libgen.rs/search.php?req=topicid101&open=0&column=topic
+102,Literature,https://libgen.rs/search.php?req=topicid102&open=0&column=topic
+103,Fiction,https://libgen.rs/search.php?req=topicid103&open=0&column=topic
+104,Library,https://libgen.rs/search.php?req=topicid104&open=0&column=topic
+105,Detective,https://libgen.rs/search.php?req=topicid105&open=0&column=topic
+106,Children,https://libgen.rs/search.php?req=topicid106&open=0&column=topic
+107,Comics,https://libgen.rs/search.php?req=topicid107&open=0&column=topic
+108,Literary,https://libgen.rs/search.php?req=topicid108&open=0&column=topic
+109,Poetry,https://libgen.rs/search.php?req=topicid109&open=0&column=topic
+110,Prose,https://libgen.rs/search.php?req=topicid110&open=0&column=topic
+111,Folklore,https://libgen.rs/search.php?req=topicid111&open=0&column=topic
+112,Fantasy,https://libgen.rs/search.php?req=topicid112&open=0&column=topic
+113,Mathematics,https://libgen.rs/search.php?req=topicid113&open=0&column=topic
+114,Algebra,https://libgen.rs/search.php?req=topicid114&open=0&column=topic
+115,Algebra: Linear Algebra,https://libgen.rs/search.php?req=topicid115&open=0&column=topic
+116,Algorithms and Data Structures,https://libgen.rs/search.php?req=topicid116&open=0&column=topic
+117,Analysis,https://libgen.rs/search.php?req=topicid117&open=0&column=topic
+118,Wavelets and signal processing,https://libgen.rs/search.php?req=topicid118&open=0&column=topic
+119,Probability,https://libgen.rs/search.php?req=topicid119&open=0&column=topic
+120,Computational Mathematics,https://libgen.rs/search.php?req=topicid120&open=0&column=topic
+121,Geometry and Topology,https://libgen.rs/search.php?req=topicid121&open=0&column=topic
+122,Puzzle,https://libgen.rs/search.php?req=topicid122&open=0&column=topic
+123,Dynamical Systems,https://libgen.rs/search.php?req=topicid123&open=0&column=topic
+124,Discrete Mathematics,https://libgen.rs/search.php?req=topicid124&open=0&column=topic
+125,Differential Equations,https://libgen.rs/search.php?req=topicid125&open=0&column=topic
+126,Combinatorics,https://libgen.rs/search.php?req=topicid126&open=0&column=topic
+127,The complex variable,https://libgen.rs/search.php?req=topicid127&open=0&column=topic
+128,Computer Algebra,https://libgen.rs/search.php?req=topicid128&open=0&column=topic
+129,Lectures,https://libgen.rs/search.php?req=topicid129&open=0&column=topic
+130,Logic,https://libgen.rs/search.php?req=topicid130&open=0&column=topic
+131,Mathematical Statistics,https://libgen.rs/search.php?req=topicid131&open=0&column=topic
+132,Mathematical Physics,https://libgen.rs/search.php?req=topicid132&open=0&column=topic
+133,Continued fractions,https://libgen.rs/search.php?req=topicid133&open=0&column=topic
+134,Fuzzy Logic and Applications,https://libgen.rs/search.php?req=topicid134&open=0&column=topic
+135,Optimal control,https://libgen.rs/search.php?req=topicid135&open=0&column=topic
+136,Optimization. Operations Research.,https://libgen.rs/search.php?req=topicid136&open=0&column=topic
+137,Applied Mathematics,https://libgen.rs/search.php?req=topicid137&open=0&column=topic
+138,Symmetry and group,https://libgen.rs/search.php?req=topicid138&open=0&column=topic
+139,Automatic Control Theory,https://libgen.rs/search.php?req=topicid139&open=0&column=topic
+140,Graph Theory,https://libgen.rs/search.php?req=topicid140&open=0&column=topic
+141,Game Theory,https://libgen.rs/search.php?req=topicid141&open=0&column=topic
+142,Operator Theory,https://libgen.rs/search.php?req=topicid142&open=0&column=topic
+143,Number Theory,https://libgen.rs/search.php?req=topicid143&open=0&column=topic
+144,Functional Analysis,https://libgen.rs/search.php?req=topicid144&open=0&column=topic
+145,Numerical Analysis,https://libgen.rs/search.php?req=topicid145&open=0&column=topic
+146,Elementary,https://libgen.rs/search.php?req=topicid146&open=0&column=topic
+147,Medicine,https://libgen.rs/search.php?req=topicid147&open=0&column=topic
+148,Anatomy and physiology,https://libgen.rs/search.php?req=topicid148&open=0&column=topic
+149,Anesthesiology and Intensive Care,https://libgen.rs/search.php?req=topicid149&open=0&column=topic
+150,Diseases,https://libgen.rs/search.php?req=topicid150&open=0&column=topic
+151,Diseases: Internal Medicine,https://libgen.rs/search.php?req=topicid151&open=0&column=topic
+152,Histology,https://libgen.rs/search.php?req=topicid152&open=0&column=topic
+153,Homeopathy,https://libgen.rs/search.php?req=topicid153&open=0&column=topic
+155,Diabetes,https://libgen.rs/search.php?req=topicid155&open=0&column=topic
+156,Immunology,https://libgen.rs/search.php?req=topicid156&open=0&column=topic
+157,Infectious diseases,https://libgen.rs/search.php?req=topicid157&open=0&column=topic
+158,Yoga,https://libgen.rs/search.php?req=topicid158&open=0&column=topic
+159,Cardiology,https://libgen.rs/search.php?req=topicid159&open=0&column=topic
+160,Chinese Medicine,https://libgen.rs/search.php?req=topicid160&open=0&column=topic
+161,Clinical Medicine,https://libgen.rs/search.php?req=topicid161&open=0&column=topic
+162,Molecular Medicine,https://libgen.rs/search.php?req=topicid162&open=0&column=topic
+163,Natural Medicine,https://libgen.rs/search.php?req=topicid163&open=0&column=topic
+164,Popular scientific literature,https://libgen.rs/search.php?req=topicid164&open=0&column=topic
+165,Neurology,https://libgen.rs/search.php?req=topicid165&open=0&column=topic
+166,Oncology,https://libgen.rs/search.php?req=topicid166&open=0&column=topic
+167,ENT,https://libgen.rs/search.php?req=topicid167&open=0&column=topic
+168,Ophthalmology,https://libgen.rs/search.php?req=topicid168&open=0&column=topic
+169,Pediatrics,https://libgen.rs/search.php?req=topicid169&open=0&column=topic
+170,"Dentistry, Orthodontics",https://libgen.rs/search.php?req=topicid170&open=0&column=topic
+171,Trial,https://libgen.rs/search.php?req=topicid171&open=0&column=topic
+172,Therapy,https://libgen.rs/search.php?req=topicid172&open=0&column=topic
+173,Pharmacology,https://libgen.rs/search.php?req=topicid173&open=0&column=topic
+174,Feng Shui,https://libgen.rs/search.php?req=topicid174&open=0&column=topic
+175,"Surgery, Orthopedics",https://libgen.rs/search.php?req=topicid175&open=0&column=topic
+176,Endocrinology,https://libgen.rs/search.php?req=topicid176&open=0&column=topic
+177,Epidemiology,https://libgen.rs/search.php?req=topicid177&open=0&column=topic
+178,Science (General),https://libgen.rs/search.php?req=topicid178&open=0&column=topic
+179,International Conferences and Symposiums,https://libgen.rs/search.php?req=topicid179&open=0&column=topic
+180,Science of Science,https://libgen.rs/search.php?req=topicid180&open=0&column=topic
+181,Scientific-popular,https://libgen.rs/search.php?req=topicid181&open=0&column=topic
+182,Scientific and popular: Journalism,https://libgen.rs/search.php?req=topicid182&open=0&column=topic
+183,Education,https://libgen.rs/search.php?req=topicid183&open=0&column=topic
+184,Theses abstracts,https://libgen.rs/search.php?req=topicid184&open=0&column=topic
+185,International Conferences and Symposiums,https://libgen.rs/search.php?req=topicid185&open=0&column=topic
+186,Self-help books,https://libgen.rs/search.php?req=topicid186&open=0&column=topic
+187,Elementary,https://libgen.rs/search.php?req=topicid187&open=0&column=topic
+189,Other Social Sciences,https://libgen.rs/search.php?req=topicid189&open=0&column=topic
+190,"Journalism, Media",https://libgen.rs/search.php?req=topicid190&open=0&column=topic
+191,Cultural,https://libgen.rs/search.php?req=topicid191&open=0&column=topic
+192,Politics,https://libgen.rs/search.php?req=topicid192&open=0&column=topic
+193,Politics: International Relations,https://libgen.rs/search.php?req=topicid193&open=0&column=topic
+194,Sociology,https://libgen.rs/search.php?req=topicid194&open=0&column=topic
+195,Philosophy,https://libgen.rs/search.php?req=topicid195&open=0&column=topic
+196,Philosophy: Critical Thinking,https://libgen.rs/search.php?req=topicid196&open=0&column=topic
+197,Ethnography,https://libgen.rs/search.php?req=topicid197&open=0&column=topic
+198,Psychology,https://libgen.rs/search.php?req=topicid198&open=0&column=topic
+199,Hypnosis,https://libgen.rs/search.php?req=topicid199&open=0&column=topic
+200,The art of communication,https://libgen.rs/search.php?req=topicid200&open=0&column=topic
+201,"Love, erotic",https://libgen.rs/search.php?req=topicid201&open=0&column=topic
+202,Neuro-Linguistic Programming,https://libgen.rs/search.php?req=topicid202&open=0&column=topic
+203,Pedagogy,https://libgen.rs/search.php?req=topicid203&open=0&column=topic
+204,Creative Thinking,https://libgen.rs/search.php?req=topicid204&open=0&column=topic
+205,Religion,https://libgen.rs/search.php?req=topicid205&open=0&column=topic
+206,Buddhism,https://libgen.rs/search.php?req=topicid206&open=0&column=topic
+207,Kabbalah,https://libgen.rs/search.php?req=topicid207&open=0&column=topic
+208,Orthodoxy,https://libgen.rs/search.php?req=topicid208&open=0&column=topic
+209,"Esoteric, Mystery",https://libgen.rs/search.php?req=topicid209&open=0&column=topic
+210,Technology,https://libgen.rs/search.php?req=topicid210&open=0&column=topic
+211,Automation,https://libgen.rs/search.php?req=topicid211&open=0&column=topic
+212,Aerospace Equipment,https://libgen.rs/search.php?req=topicid212&open=0&column=topic
+213,Water Treatment,https://libgen.rs/search.php?req=topicid213&open=0&column=topic
+214,Military equipment,https://libgen.rs/search.php?req=topicid214&open=0&column=topic
+215,Military equipment: Weapon,https://libgen.rs/search.php?req=topicid215&open=0&column=topic
+216,Publishing,https://libgen.rs/search.php?req=topicid216&open=0&column=topic
+217,Space Science,https://libgen.rs/search.php?req=topicid217&open=0&column=topic
+218,Light Industry,https://libgen.rs/search.php?req=topicid218&open=0&column=topic
+219,Materials,https://libgen.rs/search.php?req=topicid219&open=0&column=topic
+220,Mechanical Engineering,https://libgen.rs/search.php?req=topicid220&open=0&column=topic
+221,Metallurgy,https://libgen.rs/search.php?req=topicid221&open=0&column=topic
+222,Metrology,https://libgen.rs/search.php?req=topicid222&open=0&column=topic
+223,Safety and Security,https://libgen.rs/search.php?req=topicid223&open=0&column=topic
+224,Nanotechnology,https://libgen.rs/search.php?req=topicid224&open=0&column=topic
+225,Oil and Gas Technologies,https://libgen.rs/search.php?req=topicid225&open=0&column=topic
+226,Oil and Gas Technologies: Pipelines,https://libgen.rs/search.php?req=topicid226&open=0&column=topic
+227,Regulatory Literature,https://libgen.rs/search.php?req=topicid227&open=0&column=topic
+228,Patent Business. Ingenuity. Innovation,https://libgen.rs/search.php?req=topicid228&open=0&column=topic
+229,Food Manufacturing,https://libgen.rs/search.php?req=topicid229&open=0&column=topic
+230,Instrument,https://libgen.rs/search.php?req=topicid230&open=0&column=topic
+231,Industry: Metallurgy,https://libgen.rs/search.php?req=topicid231&open=0&column=topic
+232,industrial equipment and technology,https://libgen.rs/search.php?req=topicid232&open=0&column=topic
+233,Missiles,https://libgen.rs/search.php?req=topicid233&open=0&column=topic
+234,Communication,https://libgen.rs/search.php?req=topicid234&open=0&column=topic
+235,Communication: Telecommunications,https://libgen.rs/search.php?req=topicid235&open=0&column=topic
+236,Construction,https://libgen.rs/search.php?req=topicid236&open=0&column=topic
+238,Construction: Ventilation and Air Conditioning,https://libgen.rs/search.php?req=topicid238&open=0&column=topic
+239,Construction: Renovation and interior design,https://libgen.rs/search.php?req=topicid239&open=0&column=topic
+240,Construction: Renovation and interior design: Saunas,https://libgen.rs/search.php?req=topicid240&open=0&column=topic
+241,Construction: Cement Industry,https://libgen.rs/search.php?req=topicid241&open=0&column=topic
+242,Heat,https://libgen.rs/search.php?req=topicid242&open=0&column=topic
+243,Fuel Technology,https://libgen.rs/search.php?req=topicid243&open=0&column=topic
+244,Transport,https://libgen.rs/search.php?req=topicid244&open=0&column=topic
+245,Transportation: Aviation,https://libgen.rs/search.php?req=topicid245&open=0&column=topic
+246,"Transportation: Cars, motorcycles",https://libgen.rs/search.php?req=topicid246&open=0&column=topic
+247,Transportation: Rail,https://libgen.rs/search.php?req=topicid247&open=0&column=topic
+248,Transportation: Ships,https://libgen.rs/search.php?req=topicid248&open=0&column=topic
+249,Refrigeration,https://libgen.rs/search.php?req=topicid249&open=0&column=topic
+250,Electronics,https://libgen.rs/search.php?req=topicid250&open=0&column=topic
+251,Electronics: Hardware,https://libgen.rs/search.php?req=topicid251&open=0&column=topic
+252,Electronics: Fiber Optics,https://libgen.rs/search.php?req=topicid252&open=0&column=topic
+253,Electronics: Home Electronics,https://libgen.rs/search.php?req=topicid253&open=0&column=topic
+254,Electronics: Microprocessor Technology,https://libgen.rs/search.php?req=topicid254&open=0&column=topic
+255,Electronics: Signal Processing,https://libgen.rs/search.php?req=topicid255&open=0&column=topic
+256,Electronics: Radio,https://libgen.rs/search.php?req=topicid256&open=0&column=topic
+257,Electronics: Robotics,https://libgen.rs/search.php?req=topicid257&open=0&column=topic
+258,Electronics: VLSI,https://libgen.rs/search.php?req=topicid258&open=0&column=topic
+259,Electronics: TV. Video,https://libgen.rs/search.php?req=topicid259&open=0&column=topic
+260,Electronics: Telecommunications,https://libgen.rs/search.php?req=topicid260&open=0&column=topic
+261,Electronics: Electronics,https://libgen.rs/search.php?req=topicid261&open=0&column=topic
+262,Energy,https://libgen.rs/search.php?req=topicid262&open=0&column=topic
+263,Energy: Renewable Energy,https://libgen.rs/search.php?req=topicid263&open=0&column=topic
+264,Physics,https://libgen.rs/search.php?req=topicid264&open=0&column=topic
+265,Astronomy,https://libgen.rs/search.php?req=topicid265&open=0&column=topic
+266,Astronomy: Astrophysics,https://libgen.rs/search.php?req=topicid266&open=0&column=topic
+267,Geophysics,https://libgen.rs/search.php?req=topicid267&open=0&column=topic
+268,Quantum Mechanics,https://libgen.rs/search.php?req=topicid268&open=0&column=topic
+269,Quantum Physics,https://libgen.rs/search.php?req=topicid269&open=0&column=topic
+270,Crystal Physics,https://libgen.rs/search.php?req=topicid270&open=0&column=topic
+271,Mechanics,https://libgen.rs/search.php?req=topicid271&open=0&column=topic
+272,Mechanics: Oscillations and Waves,https://libgen.rs/search.php?req=topicid272&open=0&column=topic
+273,Mechanics: Mechanics of deformable bodies,https://libgen.rs/search.php?req=topicid273&open=0&column=topic
+274,Mechanics: Fluid Mechanics,https://libgen.rs/search.php?req=topicid274&open=0&column=topic
+275,Mechanics: Nonlinear dynamics and chaos,https://libgen.rs/search.php?req=topicid275&open=0&column=topic
+276,Mechanics: Strength of Materials,https://libgen.rs/search.php?req=topicid276&open=0&column=topic
+277,Mechanics: Theory of Elasticity,https://libgen.rs/search.php?req=topicid277&open=0&column=topic
+278,General courses,https://libgen.rs/search.php?req=topicid278&open=0&column=topic
+279,Optics,https://libgen.rs/search.php?req=topicid279&open=0&column=topic
+280,Spectroscopy,https://libgen.rs/search.php?req=topicid280&open=0&column=topic
+281,Theory of Relativity and Gravitation,https://libgen.rs/search.php?req=topicid281&open=0&column=topic
+282,Thermodynamics and Statistical Mechanics,https://libgen.rs/search.php?req=topicid282&open=0&column=topic
+283,Physics of the Atmosphere,https://libgen.rs/search.php?req=topicid283&open=0&column=topic
+284,Physics of lasers,https://libgen.rs/search.php?req=topicid284&open=0&column=topic
+285,Plasma Physics,https://libgen.rs/search.php?req=topicid285&open=0&column=topic
+286,Solid State Physics,https://libgen.rs/search.php?req=topicid286&open=0&column=topic
+287,Electricity and Magnetism,https://libgen.rs/search.php?req=topicid287&open=0&column=topic
+288,Electrodynamics,https://libgen.rs/search.php?req=topicid288&open=0&column=topic
+289,Physical Educ. and Sport,https://libgen.rs/search.php?req=topicid289&open=0&column=topic
+290,Bodybuilding,https://libgen.rs/search.php?req=topicid290&open=0&column=topic
+291,Martial Arts,https://libgen.rs/search.php?req=topicid291&open=0&column=topic
+292,Bike,https://libgen.rs/search.php?req=topicid292&open=0&column=topic
+293,Survival,https://libgen.rs/search.php?req=topicid293&open=0&column=topic
+294,Sport fishing,https://libgen.rs/search.php?req=topicid294&open=0&column=topic
+295,Fencing,https://libgen.rs/search.php?req=topicid295&open=0&column=topic
+296,Chemistry,https://libgen.rs/search.php?req=topicid296&open=0&column=topic
+297,Analytical Chemistry,https://libgen.rs/search.php?req=topicid297&open=0&column=topic
+298,Materials,https://libgen.rs/search.php?req=topicid298&open=0&column=topic
+299,Inorganic Chemistry,https://libgen.rs/search.php?req=topicid299&open=0&column=topic
+300,Organic Chemistry,https://libgen.rs/search.php?req=topicid300&open=0&column=topic
+301,Pyrotechnics and explosives,https://libgen.rs/search.php?req=topicid301&open=0&column=topic
+302,Pharmacology,https://libgen.rs/search.php?req=topicid302&open=0&column=topic
+303,Physical Chemistry,https://libgen.rs/search.php?req=topicid303&open=0&column=topic
+304,Chemical,https://libgen.rs/search.php?req=topicid304&open=0&column=topic
+305,Economy,https://libgen.rs/search.php?req=topicid305&open=0&column=topic
+306,Investing,https://libgen.rs/search.php?req=topicid306&open=0&column=topic
+307,Mathematical Economics,https://libgen.rs/search.php?req=topicid307&open=0&column=topic
+308,Popular,https://libgen.rs/search.php?req=topicid308&open=0&column=topic
+309,Markets,https://libgen.rs/search.php?req=topicid309&open=0&column=topic
+310,Econometrics,https://libgen.rs/search.php?req=topicid310&open=0&column=topic
+311,"Criminology, Forensic Science",https://libgen.rs/search.php?req=topicid311&open=0&column=topic
+312,Criminology: Court. examination,https://libgen.rs/search.php?req=topicid312&open=0&column=topic
+313,Law,https://libgen.rs/search.php?req=topicid313&open=0&column=topic
+314,Linguistics,https://libgen.rs/search.php?req=topicid314&open=0&column=topic
+315,Foreign,https://libgen.rs/search.php?req=topicid315&open=0&column=topic
+316,Foreign: English,https://libgen.rs/search.php?req=topicid316&open=0&column=topic
+317,Foreign: French,https://libgen.rs/search.php?req=topicid317&open=0&column=topic
+318,Comparative Studies,https://libgen.rs/search.php?req=topicid318&open=0&column=topic
+319,Linguistics,https://libgen.rs/search.php?req=topicid319&open=0&column=topic
+320,Rhetoric,https://libgen.rs/search.php?req=topicid320&open=0&column=topic
+321,Russian Language,https://libgen.rs/search.php?req=topicid321&open=0&column=topic
+322,Dictionaries,https://libgen.rs/search.php?req=topicid322&open=0&column=topic
+323,Stylistics,https://libgen.rs/search.php?req=topicid323&open=0&column=topic
+324,Jurisprudence,https://libgen.rs/search.php?req=topicid324&open=0&column=topic

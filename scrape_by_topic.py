@@ -1,11 +1,12 @@
 from base64 import encode
 import requests
 import csv
+import psutil
 import json
 import pandas as pd
 import mysql.connector
-import concurrent.futures
 from bs4 import BeautifulSoup
+from multiprocessing.context import Process
 session = requests.session()
 df = pd.DataFrame()
 cols = ["Topic ID","Search page","ID","Authors","File name","File link","File edition","Isin's","Publisher","Publish year","Pages","Language","File size","File extension","Mirror links","Page Url"]
@@ -78,90 +79,92 @@ def get_urls(topic_id,param_dict):
         urls.append(page_url)
     return urls
 
-def fetch_data(page_url):
+def fetch_data(topic_id,param_dict):
     global df
-    page = page_url.split('page=')[-1]
-    topic_id = page_url.split('topicid')[1].split('&')[0]
-    # print(f'scraping topic:{topic_id}, page:{page}')
-    print(f'url: {page_url}')
-    res = session.get(page_url,headers=header)
-    soup = BeautifulSoup(res.text,'html5lib')
-    dataset = soup.find_all('table')[2].find_all('tr')
-    if len(dataset) == 1:
-        return 0
-    for data in dataset[1:]:
-        info = data.find_all('td')
-        if info[6].text == 'English':
-            # file id
-            id = int(info[0].text)
+    for page in range(1,401):
+        page_url = f'https://libgen.rs/search.php?&req=topicid{topic_id}&view='+str(param_dict['view_type'])+'&phrase='+str(param_dict['phrase_bol'])+'&column='+str(param_dict['search_field'])+'&res='+str(param_dict['result_count'])+'&sort='+str(param_dict['sort_column'])+'&open='+str(param_dict['download_type'])+'&sortmode='+str(param_dict['sort_method'])+f'&page={str(page)}'
+        page = page_url.split('page=')[-1]
+        topic_id = page_url.split('topicid')[1].split('&')[0]
+        print(f'scraping topic:{topic_id}, page:{page}')
+        # print(f'url: {page_url}')
+        res = session.get(page_url,headers=header)
+        soup = BeautifulSoup(res.text,'html5lib')
+        dataset = soup.find_all('table')[2].find_all('tr')
+        if len(dataset) == 1:
+            return 0
+        for data in dataset[1:]:
+            info = data.find_all('td')
+            if info[6].text == 'English':
+                # file id
+                id = int(info[0].text)
 
-            # file authors
-            auths = [i.strip() for i in info[1].text.split(',')] 
-            auth_dict = {}
-            for i in range(5):
-                try:
-                    auth_dict[f'author{i+1}'] = auths[i]
-                except:
-                    pass
+                # file authors
+                auths = [i.strip() for i in info[1].text.split(',')] 
+                auth_dict = {}
+                for i in range(5):
+                    try:
+                        auth_dict[f'author{i+1}'] = auths[i]
+                    except:
+                        pass
 
-            # file main data 
-            f_data = soup.find('a',{'id':id})
-            data = process_file_data(f_data)
-            
-            # file name
-            try:
-                file_name = data[0]
-            except:
-                continue
-            
-            # file link
-            file_link = data[1]
-            
-            # file edition
-            file_ed = data[2]
-            
-            # file isin
-            isin_dict = data[3]
-            
-            # file publisher 
-            publisher = info[3].text
-            try:
-                pub_yr = int(info[4].text)
-            except ValueError:
-                pub_yr = ''
-            
-            # file page count
-            file_pages = info[5].text
-            try:
-                if '[' in file_pages and ']' in file_pages:
-                    file_pages = int(file_pages.split('[')[1].split(']')[0])
-                else:
-                    file_pages = int(file_pages)
-            except:
-                file_pages = ''
-            
-            # file language
-            file_lang = info[6].text
-            
-            # file size
-            file_size = info[7].text.strip()
-            
-            # file extension
-            file_ext = info[8].text
-            
-            # file mirror links
-            mirror_links = [dt.find('a').get('href') for dt in info[9:]]
-            mirror_links_dict = {}
-            for i in range(len(mirror_links)):
+                # file main data 
+                f_data = soup.find('a',{'id':id})
+                data = process_file_data(f_data)
+                
+                # file name
                 try:
-                    mirror_links_dict[f'mirror_link{i+1}'] = mirror_links[i]
+                    file_name = data[0]
                 except:
-                    pass
-        
-            # data append to row
-            row = [int(topic_id),int(page),id,json.dumps(auth_dict),file_name,file_link,file_ed,json.dumps(isin_dict),publisher,pub_yr,file_pages,file_lang,file_size,file_ext,json.dumps(mirror_links_dict),page_url]
-            df = df.append(pd.DataFrame([row],columns=cols),ignore_index = True)
-    
+                    continue
+                
+                # file link
+                file_link = data[1]
+                
+                # file edition
+                file_ed = data[2]
+                
+                # file isin
+                isin_dict = data[3]
+                
+                # file publisher 
+                publisher = info[3].text
+                try:
+                    pub_yr = int(info[4].text)
+                except ValueError:
+                    pub_yr = ''
+                
+                # file page count
+                file_pages = info[5].text
+                try:
+                    if '[' in file_pages and ']' in file_pages:
+                        file_pages = int(file_pages.split('[')[1].split(']')[0])
+                    else:
+                        file_pages = int(file_pages)
+                except:
+                    file_pages = ''
+                
+                # file language
+                file_lang = info[6].text
+                
+                # file size
+                file_size = info[7].text.strip()
+                
+                # file extension
+                file_ext = info[8].text
+                
+                # file mirror links
+                mirror_links = [dt.find('a').get('href') for dt in info[9:]]
+                mirror_links_dict = {}
+                for i in range(len(mirror_links)):
+                    try:
+                        mirror_links_dict[f'mirror_link{i+1}'] = mirror_links[i]
+                    except:
+                        pass
+            
+                # data append to row
+                row = [int(topic_id),int(page),id,json.dumps(auth_dict),file_name,file_link,file_ed,json.dumps(isin_dict),publisher,pub_yr,file_pages,file_lang,file_size,file_ext,json.dumps(mirror_links_dict),page_url]
+                df = df.append(pd.DataFrame([row],columns=cols),ignore_index = True)
+
 def search_by_topicid(topic_id):
     global df
     params = {
@@ -174,16 +177,156 @@ def search_by_topicid(topic_id):
         'sort_column':'def',
     }
     print(f'topic:{topic_id}')
-    urls = get_urls(topic_id,params)
-    for url in urls:
-        fetch_data(url)
+    fetch_data(topic_id,params)
     df.to_csv(f'data_files/libgen_topic_{topic_id}_data.csv',mode='a', encoding='utf-8',index=False)
     df.drop(df.index, inplace=True)
-    # df = pd.read_csv('libgen_topic_264_data.csv')
+    # df = pd.read_csv(f'libgen_topic_{topic_id}_data.csv')
     # db_insert(df)
 
 def start():
-    for i in range(100,150):
-        search_by_topicid(i)
+    index = 100
+    for _ in range(4):
+        try:
+            # process 1
+            p1 = Process(target=search_by_topicid,args=(str(index)))
+            index += 1
+        except Exception as e:
+            pass
+        # try:
+        #     # process 2
+        #     p2 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 3
+        #     p3 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 4
+        #     p4 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 5
+        #     p5 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 6
+        #     p6 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 7
+        #     p7 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 8
+        #     p8 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 9
+        #     p9 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        # try:
+        #     # process 10
+        #     p10 = Process(target=search_by_topicid,args=(str(index)))
+        #     index += 1
+        # except:
+        #     pass
+        
+        try:
+            p1.start()
+        except:
+            pass
+        # try:
+        #     p2.start()
+        # except:
+        #     pass
+        # try:
+        #     p3.start()
+        # except:
+        #     pass
+        # try:
+        #     p4.start()
+        # except:
+        #     pass
+        # try:
+        #     p5.start()
+        # except:
+        #     pass
+        # try:
+        #     p6.start()
+        # except:
+        #     pass
+        # try:
+        #     p7.start()
+        # except:
+        #     pass
+        # try:
+        #     p8.start()
+        # except:
+        #     pass
+        # try:
+        #     p9.start()
+        # except:
+        #     pass
+        # try:
+        #     p10.start()
+        # except:
+        #     pass
+        
+        try:
+            p1.join()
+        except:
+            pass
+        # try:
+        #     p2.join()
+        # except:
+        #     pass
+        # try:
+        #     p3.join()
+        # except:
+        #     pass
+        # try:
+        #     p4.join()
+        # except:
+        #     pass
+        # try:
+        #     p5.join()
+        # except:
+        #     pass
+        # try:
+        #     p6.join()
+        # except:
+        #     pass
+        # try:
+        #     p7.join()
+        # except:
+        #     pass
+        # try:
+        #     p8.join()
+        # except:
+        #     pass
+        # try:
+        #     p9.join()
+        # except:
+        #     pass
+        # try:
+        #     p10.join()
+        # except:
+        #     pass
 
 start()

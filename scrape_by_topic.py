@@ -6,6 +6,7 @@ import json
 import pandas as pd
 import mysql.connector
 from bs4 import BeautifulSoup
+import concurrent.futures
 from multiprocessing.context import Process
 session = requests.session()
 df = pd.DataFrame()
@@ -167,6 +168,7 @@ def fetch_data(topic_id,param_dict):
 
 def search_by_topicid(topic_id):
     global df
+    topic_id = topic_id[0]
     params = {
         'view_type':'simple',
         'search_field':'def',
@@ -176,157 +178,13 @@ def search_by_topicid(topic_id):
         'sort_method':'ASC',
         'sort_column':'def',
     }
-    print(f'topic:{topic_id}')
+    # print(f'topic:{topic_id}')
     fetch_data(topic_id,params)
-    df.to_csv(f'data_files/libgen_topic_{topic_id}_data.csv',mode='a', encoding='utf-8',index=False)
+    df.to_csv(f'libgen_topic_{topic_id}_data.csv',mode='a', encoding='utf-8',index=False)
     df.drop(df.index, inplace=True)
     # df = pd.read_csv(f'libgen_topic_{topic_id}_data.csv')
     # db_insert(df)
 
-def start():
-    index = 100
-    for _ in range(4):
-        try:
-            # process 1
-            p1 = Process(target=search_by_topicid,args=(str(index)))
-            index += 1
-        except Exception as e:
-            pass
-        # try:
-        #     # process 2
-        #     p2 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 3
-        #     p3 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 4
-        #     p4 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 5
-        #     p5 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 6
-        #     p6 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 7
-        #     p7 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 8
-        #     p8 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 9
-        #     p9 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        # try:
-        #     # process 10
-        #     p10 = Process(target=search_by_topicid,args=(str(index)))
-        #     index += 1
-        # except:
-        #     pass
-        
-        try:
-            p1.start()
-        except:
-            pass
-        # try:
-        #     p2.start()
-        # except:
-        #     pass
-        # try:
-        #     p3.start()
-        # except:
-        #     pass
-        # try:
-        #     p4.start()
-        # except:
-        #     pass
-        # try:
-        #     p5.start()
-        # except:
-        #     pass
-        # try:
-        #     p6.start()
-        # except:
-        #     pass
-        # try:
-        #     p7.start()
-        # except:
-        #     pass
-        # try:
-        #     p8.start()
-        # except:
-        #     pass
-        # try:
-        #     p9.start()
-        # except:
-        #     pass
-        # try:
-        #     p10.start()
-        # except:
-        #     pass
-        
-        try:
-            p1.join()
-        except:
-            pass
-        # try:
-        #     p2.join()
-        # except:
-        #     pass
-        # try:
-        #     p3.join()
-        # except:
-        #     pass
-        # try:
-        #     p4.join()
-        # except:
-        #     pass
-        # try:
-        #     p5.join()
-        # except:
-        #     pass
-        # try:
-        #     p6.join()
-        # except:
-        #     pass
-        # try:
-        #     p7.join()
-        # except:
-        #     pass
-        # try:
-        #     p8.join()
-        # except:
-        #     pass
-        # try:
-        #     p9.join()
-        # except:
-        #     pass
-        # try:
-        #     p10.join()
-        # except:
-        #     pass
-
-start()
+if __name__ == '__main__':
+    with concurrent.futures.ProcessPoolExecutor(max_workers=3) as executor:
+        [executor.submit(search_by_topicid, [str(i)]) for i in [1,5,6,7]]

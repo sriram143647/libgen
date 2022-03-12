@@ -1,13 +1,9 @@
-from base64 import encode
 import requests
-import csv
-import psutil
 import json
 import pandas as pd
 import mysql.connector
 from bs4 import BeautifulSoup
 import concurrent.futures
-from multiprocessing.context import Process
 session = requests.session()
 df = pd.DataFrame()
 cols = ["Topic ID","Search page","ID","Authors","File name","File link","File edition","Isin's","Publisher","Publish year","Pages","Language","File size","File extension","Mirror links","Page Url"]
@@ -178,13 +174,14 @@ def search_by_topicid(topic_id):
         'sort_method':'ASC',
         'sort_column':'def',
     }
-    # print(f'topic:{topic_id}')
     fetch_data(topic_id,params)
-    df.to_csv(f'libgen_topic_{topic_id}_data.csv',mode='a', encoding='utf-8',index=False)
+    df.to_csv(f'D:\sriram\exp_programs\libgen\libgen_topic_{topic_id}_data.csv',mode='a', encoding='utf-8',index=False)
     df.drop(df.index, inplace=True)
     # df = pd.read_csv(f'libgen_topic_{topic_id}_data.csv')
     # db_insert(df)
 
 if __name__ == '__main__':
-    with concurrent.futures.ProcessPoolExecutor(max_workers=3) as executor:
-        [executor.submit(search_by_topicid, [str(i)]) for i in [1,5,6,7]]
+    for i in range(11,20):
+        search_by_topicid([str(i)])
+    # with concurrent.futures.ProcessPoolExecutor(max_workers=3) as executor:
+    #     [executor.submit(search_by_topicid, [str(i)]) for i in [11,12,14,15,17]]
